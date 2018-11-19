@@ -1,6 +1,6 @@
 # micronaut-spring-graal-maven-example
 
-*WARNING*: It still doesn't work (we are working on it)
+> **WARNING**: It still doesn't work (we are working on it)
 
 This is a sample project to execute a SpringBoot application in a Graal native-image thanks to Micronaut (with Maven)
 
@@ -34,7 +34,7 @@ To compile the application to a native image using Graal, you need to generate .
 $ docker run --rm -it -v "$PWD":/project -w /project oracle/graalvm-ce:1.0.0-rc8 /bin/bash build-native-image.sh
 </pre>
 
-*NOTE:* We are using GraalVM RC8 (instead of RC9, the latest at time of writing this doc, because in RC9 there are a [regression](https://github.com/oracle/graal/issues/494).
+> **NOTE:** We are using GraalVM RC8 (instead of RC9, the latest at time of writing this doc, because in RC9 there is a [regression](https://github.com/oracle/graal/issues/494).
 
 Unfortunately, executing this command leads to the following error:
 
